@@ -1,0 +1,70 @@
+## OOOP FOR SQAURE
+
+class Sqaure:
+
+    def __init__(self, height="0", width="0"):
+        self.height = height
+        self.width = width
+
+
+    @property
+
+    def height(self):
+        print("Retrieving the Height")
+
+        return self.__height
+
+
+    @height.setter
+
+    def height(self, value):
+
+        if value.isdigit():
+            self.__height = value
+
+        else:
+            print("please only enter number for height")
+
+
+    @property
+
+    def width(self):
+        print("retrieving the value for width")
+
+        return self.__width
+
+
+    @width.setter
+
+    def width(self, value):
+
+        if value.isdigit():
+            self.__width = value
+
+        else:
+            print("please enter only number for width")
+
+
+
+    def getArea(self):
+        return int(self.__width) * int(self.__height)
+
+
+
+def main():
+    aSqaure = Sqaure()
+
+    height = input("Enter Height : ")
+    width = input("Enter Width : ")
+
+
+    aSquare.height = height
+    aSqaure.width = width
+
+    print("Height : ", aSqaure.height)
+    print("Width : ", aSqaure.width)
+
+    print("The Area is : ", aSqaure.getArea())
+
+
+main()

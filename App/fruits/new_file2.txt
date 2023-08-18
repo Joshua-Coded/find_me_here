@@ -1,0 +1,1 @@
+the type of my link is hard link

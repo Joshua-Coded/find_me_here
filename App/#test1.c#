@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+
+int main() {
+
+  int a = 5;
+  int *b;
+  b = &a;
+  printf("value of a = %d\n", a);
+  printf("value of a=%d\n", *(&a));
+  printf("value of a=%d\n", *b);
+  printf("address of a=%p\n", &a);
+  printf("address of a=%p\n", b);
+  printf("address of b = %u\n", &b);
+
+
+  return 0;
+
+}
